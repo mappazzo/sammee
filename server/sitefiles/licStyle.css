@@ -1,0 +1,86 @@
+/* 
+    Created on : 05/03/2016, 9:50:58 AM
+    Author     : kelly@mappazzo.com
+*/
+html, body {
+    height: 100%;
+    font-family: Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+    font-size:12px;
+    line-height:2px;
+}
+th {
+    text-align: left;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(51,204,204);
+}
+td {
+    text-align: left;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+.logoTopLeft{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    z-index: 5;
+    background-color:rgba(255,255,255,0.5);
+    text-align: center;	
+}
+.logoTopRight{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    z-index: 5;
+    background-color:rgba(255,255,255,0.5);
+    text-align: center;	
+}
+.licContent {
+    position: absolute;
+    top: 110px;
+    left: 10px;
+    background-color:rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    padding-top: 20px;
+    z-index: 10;
+    text-align: left;
+    line-height: 30px;
+    color: white;
+}
+.licAccess {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 215px);
+    background-color:rgba(0,0,0,0.7);
+    height: 200px;
+    width: 400px;
+	padding: 15px;
+    padding-top: 20px;
+    z-index: 10;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}
+.licMessage {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 215px);
+    background-color:rgba(0,0,0,0.7);
+    height: 200px;
+    width: 400px;
+	padding: 15px;
+    padding-top: 20px;
+    z-index: 10;
+	text-align: center;
+	line-height: 30px;
+	color: white;
+}

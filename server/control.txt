@@ -1,0 +1,4 @@
+minVer,1603
+currentVer,1603
+emailReports,true
+runsToCheck,3

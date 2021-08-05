@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Sammee License Server</title>
+    <link rel="icon" type="image/png" href="icon16.png">
+    <link href="sitefiles\licStyle.css" rel="stylesheet" type="text/css">
+    <script src="sitefiles\licControl.js"></script>
+  </head>
+
+  <body onload="lic_Setup();">
+<!-- Logo -->
+    <div class="logoTopLeft" id="logo" style="display:none">
+        <image id="fullBanner">
+    </div>
+
+    <div class="licContent" id="maintForm" style="display:none">
+    	<form id="dbAction">
+    		<table id="input"><tr>
+		<td style="width:180px">Action: <select style="margin:10px" name="action" id="f-act" onchange="changeAction();">
+			<option value="newLic">New License</option>
+			<option value="setType">Set Type</option>
+			<option value="setExp">Set Expiry</option>
+			<option value="setEmail">Set Email</option>
+			<option value="resetUser">Clear User</option>
+			<option value="delLic">Delete License</option>
+			<option value="reload">Reload DB</option>
+		    </select></td>
+		<td style="width:150px" id="num_cell"><span id="num_label">Lic #: </span><input style="margin:10px" type="number" size="10" max="99999" min="10000" name="licNum"></td>
+		<td style="width:300px" id="text_cell"><span id="text_label">Value: </span><input style="margin:10px" type="text" size="30" name="setVal"></td>
+		<td style="width:100px"><input type="button" value="OK" onclick="dbAction();"></td>
+	</form>
+    	<table id="dbTable" style="width:100%">
+  		<tr><th>Lic #</th><th>Type</th><th>Version</th><th>Email</th><th>User Login</th><th>Lic Expiry</th><th>Run Count</th><th>Last Report</th><th>Install Count</th></tr>
+  		<tr><td>No data</td></tr>
+	</table>
+    </div>
+
+
+<!-- User Setup -->
+    <div class="licAccess" id="access" style="display:none">
+	<image style="background-color:rgba(255,255,255,0.2); padding:3px" id="shortBanner">
+	<div style="font-size:18px; font-weight:bold">SammEE license database</div>
+	<div style="
+		border-style: solid;
+		border-width: 1px;
+		position:relative;
+		width:388px;
+		text-align:left;
+		font-size:15px;
+		font-weight:bold;
+		padding:5px">
+		<div style="position:relative; left:10px; text-align:left; line-height:30px; font-size:13px">
+			<span style="left:15px">Enter passcode:</span><br>
+			<input type="password" id="password"><br>
+			<input type="button" value="OK" onclick="lic_Pass();">
+		</div>
+	</div>
+  </div>
+
+<!-- Error screen -->
+    <div class="licMessage" id="errorScreen" style="display:none; background-color:rgba(0,0,0,1);">
+	<image style="background-color:rgba(255,255,255,0.2); padding:3px" id="shortBanner2">
+	<div id="errorMessage" style="font-size:15px; font-weight:bold"></div>
+	<div id="errorDescription" style="font-size:12px; font-weight:normal"></div>
+	<input type="button" value="Continue" onclick="lic_ShowHide('errorScreen');">
+	</form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,9 @@
+SAMMEE-1D Output file
+created: 2015/12/07 16:51
+_______________________________
+COMMENCE load parameter file: samm1d_test.sPara
+Parameter file load completed successfully
+_______________________________
+COMMENCE load setup file: samm1d_test.sSetup
+
+ERROR; could not find or open Setup file

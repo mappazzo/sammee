@@ -1,0 +1,1 @@
+[28-Mar-2016 22:25:36 UTC] PHP Fatal error:  Call to undefined function mysqli_connect() in /home10/mappazzo/public_html/sammee/license.php on line 34
